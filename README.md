@@ -32,11 +32,3 @@ JavaScript: For adding interactivity and implementing the calculation logic.
 Error Handling
 Division by Zero: Displays an error message if the user attempts to divide by zero.
 Input Validation: Ensures only valid numbers and operations are processed.
-
-
-Contact
-For any issues or suggestions, feel free to reach out at:
-Email: [your-email@example.com]
-
-Acknowledgements
-Special thanks to everyone who contributed ideas and support to this project.
