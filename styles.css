@@ -1,0 +1,114 @@
+/* Style the entire body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:linear-gradient(to bottom right, rgb(120, 170, 219), #cedb58);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff; 
+}
+/* Calculator container styling */
+.calculator {
+    background-color: #1c1c1c; /* Dark background for calculator */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    width: 320px;
+    text-align: center;
+}
+
+/* Calculator screen */
+#screen {
+    width: 100%;
+    height: 70px;
+    background-color: #333; /* Darker screen background */
+    color: #ffab00; /* Bright text color on screen */
+    font-size: 32px;
+    text-align: right;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+}
+
+/* Button container grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+}
+
+/* General button styling */
+.buttons button {
+    width: 100%;
+    padding: 18px;
+    font-size: 22px;
+    border: none;
+    background-color: #444; /* Neutral button background */
+    color: #fff; /* White text for the buttons */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.1s ease;
+}
+
+/* Button hover effect */
+.buttons button:hover {
+    background-color: #666; /* Lighter shade when hovered */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3px); /* Slight upward effect on hover */
+}
+
+/* Press effect */
+.buttons button:active {
+    transform: translateY(0); /* Button pressed effect */
+}
+
+/* Operator button styling */
+.buttons button.operator {
+    background-color: #ff5722; /* Bright orange for operators */
+    color: white;
+}
+
+.buttons button.operator:hover {
+    background-color: #e64a19; /* Darker orange when hovered */
+}
+
+/* Clear button styling */
+.buttons button#clr {
+    background-color: #d32f2f; /* Red color for clear button */
+    color: white;
+}
+
+.buttons button#clr:hover {
+    background-color: #c62828; /* Darker red on hover */
+}
+
+/* Backspace button styling */
+.buttons button#backspace {
+    background-color: #fbc02d; /* Yellow color for backspace */
+    color: #333; /* Dark text color for contrast */
+}
+
+.buttons button#backspace:hover {
+    background-color: #f9a825; /* Darker yellow when hovered */
+}
+
+/* Special styling for the '0' button to span across two columns */
+.buttons button#zero {
+    grid-column: span 2;
+}
+
+/* Equals button styling */
+.buttons button#equal {
+    background-color: #4caf50; /* Green for equals */
+    color: white;
+}
+
+.buttons button#equal:hover {
+    background-color: #388e3c; /* Darker green on hover */
+}
